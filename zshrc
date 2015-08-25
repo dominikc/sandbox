@@ -1,3 +1,8 @@
+HISTFILE="$ZDOTDIR/.zhistory"
+HISTSIZE=10000
+SAVEHIST=10000
+setopt SHARE_HISTORY
+
 autoload -U colors && colors
 ENV_PROMPT_COLOR="red"
 [[ ! "$SANDBOX_ENV" == "staging" ]] || ENV_PROMPT_COLOR="yellow"
@@ -12,6 +17,8 @@ if hash rbenv 2>/dev/null; then
 fi
 
 alias vim="vim -u $SANDBOX/vimrc"
+alias svim="sudo vim -u $SANDBOX/vimrc"
 alias be="bundle exec"
 alias ack="$SANDBOX/ack"
 alias ag="$SANDBOX/ack"
+alias ll="ls -lh"

@@ -7,7 +7,6 @@ set wildmode=full
 set hlsearch
 set lazyredraw
 set nobackup
-set noshowmode
 set noswapfile
 set nowrap
 set nowritebackup
@@ -34,4 +33,4 @@ set wildmenu
 set display+=lastline
 set autoread
 inoremap <C-U> <C-G>u<C-U>
-" end 
+" end
